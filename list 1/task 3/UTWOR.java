@@ -6,8 +6,6 @@ public class UTWOR {
     public String author;
     public String wykonawca;
     public float time;
-
-
     public void showData(){
         System.out.println("Informacje o utworze: \n[Autor]: "+this.author+"\n[Wykonawca]: "+this.wykonawca+"\n[Czas]: "+this.time);
     }

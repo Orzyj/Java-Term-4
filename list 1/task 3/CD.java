@@ -60,7 +60,7 @@ public class CD {
 
     }
     public void showData(){
-        System.out.println("Informacje o utworze: \nTytuł: "+ this.title + "\nNazwisko autora: " + this.authorSurname + "\nWydawnictwo: "+this.wyd + "\nRok wydania: "+this.year + "\nCena"+this.price);
+        System.out.println("Informacje o płycie: \n[Tytuł]: "+ this.title + "\n[Nazwisko autora]: " + this.authorSurname + "\n[Wydawnictwo]: "+this.wyd + "\n[Rok wydania]: "+this.year + "\n[Cena]:" +this.price);
     }
     public void editData(){
         InputStreamReader cin = new InputStreamReader(System.in);
@@ -144,6 +144,16 @@ public class CD {
             }
         }
 
+
+    }
+    public void showUtwory(){
+        if(listaUtworow.size() == 0){
+            System.out.println("Brak utworów na liście");
+            return;
+        }
+        System.out.println("Lista utworów: ");
+        for(int i = 0; i < listaUtworow.size(); i++)
+            System.out.println("[Autor]: " + this.listaUtworow.get(i).author + "[Czas trwania]: "+this.listaUtworow.get(i).time);
 
     }
 }
