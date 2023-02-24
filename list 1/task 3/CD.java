@@ -146,14 +146,41 @@ public class CD {
 
 
     }
-    public void showUtwory(){
+    public void showTracks(){
         if(listaUtworow.size() == 0){
-            System.out.println("Brak utworów na liście");
+            System.out.println("--------------\nBrak utworów na liście\n--------------");
             return;
         }
-        System.out.println("Lista utworów: ");
+        System.out.println("--------------\nLista utworów: ");
         for(int i = 0; i < listaUtworow.size(); i++)
-            System.out.println("[Autor]: " + this.listaUtworow.get(i).author + "[Czas trwania]: "+this.listaUtworow.get(i).time);
+            System.out.println("["+(i+1)+"] [Autor]: " + this.listaUtworow.get(i).author + "[Czas trwania]: "+this.listaUtworow.get(i).time);
+        System.out.println("\n--------------");
+    }
+    public int countTracks(){
+        return  listaUtworow.size();
+    }
+    public void addTracks(){
+        UTWOR track = new UTWOR();
+        track.insertData();
+        listaUtworow.add(track);
+    }
+    public void editTrack(){
+        if(countTracks() == 0)
+            return;
 
+        InputStreamReader cin = new InputStreamReader(System.in);
+        BufferedReader bufforCin = new BufferedReader(cin);
+        int ID;
+
+        try{
+            System.out.println("Podaj id utworu: ");
+            ID = Integer.parseInt(bufforCin.readLine());
+        } catch (IOException exception) {
+            exception.printStackTrace();
+            ID = -1;
+            System.out.println("Błędne id utworu");
+        }
+
+        listaUtworow.get(ID-1).editData();
     }
 }

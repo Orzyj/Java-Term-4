@@ -18,4 +18,8 @@ public class KOLEKCJA_PLYT{
         for(int i = 0; i < kolekcja.size(); i++)
             System.out.println("["+(i+1)+"][Płyta]:"+ this.kolekcja.get(i).title);
     }
+
+    public int countCDs(){
+        return kolekcja.size();
+    }
 }
