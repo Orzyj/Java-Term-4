@@ -1,22 +1,24 @@
-public class Pole {
+public  class Pole {
     public String nazwa;
     public int ID;
 
-    /*
-    * Konstruktor klasy abstrakcyjnej
-    * @param int, String
-    * */
     public Pole(int ID, String nazwa){
         this.ID = ID;
         this.nazwa = nazwa;
     }
-
-    /*
-    * Wypisuje informacje o polu
-    * @param none
-    * @return none
-    * */
-    public void informacjePole(){
-        System.out.println("ID: "+this.ID+"Pole"+this.nazwa);
+    public String informacjePole(){
+        return "ID: "+this.ID+"\nPole: "+this.nazwa;
     }
+    public String kup(Gracz gracz)
+    {
+        return "To pole nie można kupić";
+    }
+    public String Czynsz(Gracz placacy, Gracz wlasciciel){
+        return "Pole " + this.nazwa;
+    }
+    public String kupDomek(Gracz gracz){
+        return "Na tym polu nie można kupic domka";
+    }
+    public String sprzedaj(Gracz gracz) {return "";}
+    public boolean sprawdzeniePosiadlosci(Gracz gracz) {return false;}
 }

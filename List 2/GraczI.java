@@ -1,5 +1,5 @@
 public interface GraczI {
     void ruchPoPlanszy();
-    int odejmijZKonta(int kwota);
-    int dodajDoKonta(int kwota);
+    boolean odejmijZKonta(int kwota);
+    void dodajDoKonta(int kwota);
 }
