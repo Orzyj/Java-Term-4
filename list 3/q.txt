@@ -1,0 +1,5 @@
+1;Jakie słowo używane jest do określenia przekładania kodu źródłowego na kod maszynowy?;A) Kompilacja;B) Debugowanie;C) Tworzenie;D) Projektowanie;A
+2;Co oznacza skrót "HTML"?;A) Hypertext Markup Language;B) Hyper Transfer Mode Language;C) High Tech Machine Language;D) Home Tool Management Language;A
+3;Co oznacza skrót "CPU"?;A) Central Processing Unit;B) Computer Processing Unit;C) Core Processing Unit;D) Cache Processing Unit;A
+4;Jaki rodzaj systemu operacyjnego jest najczęściej stosowany na komputerach osobistych?;A) Linux;B) Windows;C) macOS; D) Android;B
+5;Co to jest RAM?;A) Random Access Memory;B) Read-Only Memory;C) Hard Disk Drive;D) Central Processing Unit;A
